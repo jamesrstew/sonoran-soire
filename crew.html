@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Humans — Carly's Desert Disco</title>
+  <link rel="stylesheet" href="css/desert-disco.css">
+</head>
+<body>
+  <div id="password-gate">
+    <div class="gate-inner">
+      <h2>Carly's Desert Disco <span class="sparkle">🪩</span></h2>
+      <p>Enter the secret code to join the party.</p>
+      <input type="password" name="password" placeholder="Password" autocomplete="off" autofocus aria-label="Party password">
+      <button type="button" class="btn-unlock">Let's go</button>
+      <p class="gate-error" aria-live="polite">Nope. Try again.</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Carly's Desert Disco <span>🌵</span></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="lookbook.html">Lookbook</a>
+        <a href="massage.html">Massage Schedule</a>
+        <a href="crew.html" class="active">The Humans</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1 class="section-title">The Humans</h1>
+      <p style="margin-bottom: 1.5rem; color: var(--text-muted);">Location, drink of choice, and Venmo — the essentials.</p>
+
+      <div class="crew-grid">
+        <div class="crew-card card">
+          <img src="Humans /Carly.jpeg" alt="Carly" class="avatar" loading="lazy">
+          <p class="name"><span class="bride-badge">Bride!</span> Carly Shira</p>
+          <p class="human-meta">Fraser, CO · Aperol Spritz<br><a href="https://venmo.com/u/Carly-Shira" target="_blank" rel="noopener">@Carly-Shira</a></p>
+        </div>
+        <div class="crew-card card">
+          <img src="Humans /Annie.jpeg" alt="Annie" class="avatar" loading="lazy">
+          <p class="name">Annie Raeder</p>
+          <p class="human-meta">Denver, CO · Champagne<br><a href="https://venmo.com/u/Annie-Raeder" target="_blank" rel="noopener">@Annie-Raeder</a></p>
+        </div>
+        <div class="crew-card card">
+          <img src="Humans /Eleanor.jpeg" alt="Eleanor" class="avatar" loading="lazy">
+          <p class="name">Eleanor Parmentier</p>
+          <p class="human-meta">Portland, OR · Marg<br><a href="https://venmo.com/u/Eleanor-Parmentier" target="_blank" rel="noopener">@Eleanor-Parmentier</a></p>
+        </div>
+        <div class="crew-card card">
+          <div class="avatar-placeholder" aria-hidden="true">ES</div>
+          <p class="name">Eli Sawick</p>
+          <p class="human-meta">NYC, NY · Marg<br><a href="https://venmo.com/u/esaw2" target="_blank" rel="noopener">@esaw2</a></p>
+        </div>
+        <div class="crew-card card">
+          <img src="Humans /Erin.jpeg" alt="Erin" class="avatar" loading="lazy">
+          <p class="name">Erin Sears</p>
+          <p class="human-meta">Denver, CO · Prosecco<br><a href="https://venmo.com/u/BeefcakeJane" target="_blank" rel="noopener">@BeefcakeJane</a></p>
+        </div>
+        <div class="crew-card card">
+          <div class="avatar-placeholder" aria-hidden="true">JM</div>
+          <p class="name">James Moore</p>
+          <p class="human-meta">Denver, CO · Prosecco</p>
+        </div>
+        <div class="crew-card card">
+          <img src="Humans /Jess.jpeg" alt="Jess" class="avatar" loading="lazy">
+          <p class="name">Jess Haney</p>
+          <p class="human-meta">Paola, KS · Tequila Soda<br><a href="https://venmo.com/u/leannevents" target="_blank" rel="noopener">@leannevents</a></p>
+        </div>
+        <div class="crew-card card">
+          <div class="avatar-placeholder" aria-hidden="true">JH</div>
+          <p class="name">Joanie Hollberg</p>
+          <p class="human-meta">Jersey City, NJ · Anything!<br><a href="https://venmo.com/u/Joanie-Hollberg" target="_blank" rel="noopener">@Joanie-Hollberg</a></p>
+        </div>
+        <div class="crew-card card">
+          <img src="Humans /Rachel.jpeg" alt="Rachel" class="avatar" loading="lazy">
+          <p class="name">Rachel Pronove</p>
+          <p class="human-meta">Denver, CO · Spicy marg<br><a href="https://venmo.com/u/Rachel-Guiles" target="_blank" rel="noopener">@Rachel-Guiles</a></p>
+        </div>
+        <div class="crew-card card">
+          <img src="Humans /Taylor.jpeg" alt="Taylor" class="avatar" loading="lazy">
+          <p class="name">Taylor Stewart</p>
+          <p class="human-meta">Bend, OR · Skinny marg<br><a href="https://venmo.com/u/taylordstew" target="_blank" rel="noopener">@taylordstew</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="tagline">Stay vibey.</p>
+    <p class="copy">Carly's Desert Disco · 2026</p>
+  </footer>
+
+  <script src="js/desert-disco.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itinerary — Carly's Desert Disco</title>
+  <link rel="stylesheet" href="css/desert-disco.css">
+</head>
+<body>
+  <div id="password-gate">
+    <div class="gate-inner">
+      <h2>Carly's Desert Disco <span class="sparkle">🪩</span></h2>
+      <p>Enter the secret code to join the party.</p>
+      <input type="password" name="password" placeholder="Password" autocomplete="off" autofocus aria-label="Party password">
+      <button type="button" class="btn-unlock">Let's go</button>
+      <p class="gate-error" aria-live="polite">Nope. Try again.</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Carly's Desert Disco <span>🌵</span></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="itinerary.html" class="active">Itinerary</a>
+        <a href="lookbook.html">Lookbook</a>
+        <a href="massage.html">Massage Schedule</a>
+        <a href="crew.html">The Humans</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1 class="section-title">The itinerary</h1>
+      <p style="margin-bottom: 1.5rem; color: var(--text-muted);">Tap a day to expand. Fri → Sat → Sun → Mon.</p>
+
+      <div class="itinerary-list">
+        <!-- Friday -->
+        <div>
+          <button type="button" class="collapse-trigger" aria-controls="day-fri" aria-expanded="false">
+            <span class="day-badge" style="background: linear-gradient(135deg, var(--sunset-orange), var(--magenta));">Fri</span>
+            <span>Southwestern Welcome</span>
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div id="day-fri" class="collapse-panel">
+            <div class="collapse-content">
+              <div class="itinerary-block">
+                <span class="time">12:00 PM</span> — <span class="event">🥂 Brunch (for those around) @ Cup Cafe 🧇</span>
+                <a href="https://www.google.com/maps/search/cup+cafe+tucson" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">Warm welcomes & the official start of the weekend</p>
+                <p class="look">No-stress brunch/travel fit!</p>
+              </div>
+              <div class="itinerary-block">
+                <span class="time">4:00 PM</span> — <span class="event">🍹 Aperol Spritz Bar & Sonoran Snacks 🌵</span>
+                <a href="https://www.google.com/maps/place/3404+East+5th+Street,+Tucson,+AZ+85716" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">Aperol flowing, glasses clinking, citrus & bubbles in the air</p>
+                <p class="look">Anything goes!</p>
+              </div>
+              <div class="itinerary-block">
+                <span class="time">6:30 PM</span> — <span class="event">🍽️ Dinner @ JoJo's ☀️</span>
+                <a href="https://www.google.com/maps/search/jojos+tucson" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">Patio people + playful cocktails, "we finally made it out of the group text" energy</p>
+                <p class="look">Denim + Desert Tones</p>
+              </div>
+              <div class="itinerary-block">
+                <span class="time">9:00 PM</span> — <span class="event">💎 Drinks @ Moonstone 🔮</span>
+                <a href="https://www.google.com/maps/search/moonstone+tucson" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">Elevated rooftop, intimate, & moody nightcaps</p>
+                <p class="look">Denim + Desert Tones</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Saturday -->
+        <div style="margin-top: 0.75rem;">
+          <button type="button" class="collapse-trigger" aria-controls="day-sat" aria-expanded="false">
+            <span class="day-badge" style="background: var(--magenta);">Sat</span>
+            <span>Til' Death Do Us Party</span>
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div id="day-sat" class="collapse-panel">
+            <div class="collapse-content">
+              <div class="itinerary-block">
+                <span class="time">8:30 AM</span> — <span class="event">☕ Coffee Stop @ EXO 🫖</span>
+                <a href="https://www.google.com/maps/place/Exo+Roast+Co/@32.2265939,-110.9714115,17z" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">Caffeine-forward, neighborhood coffee vibes</p>
+                <p class="look">Desert Ease</p>
+              </div>
+              <div class="itinerary-block">
+                <span class="time">10:00 AM</span> — <span class="event">🏜️ Sabino Canyon 🌵</span>
+                <a href="https://www.google.com/maps/search/Sabino+Canyon+Recreation+Area+Tucson" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">Quiet desert air, sunlight on the mountains, coffee in hand</p>
+                <p class="look">Desert Ease</p>
+              </div>
+              <div class="itinerary-block">
+                <span class="time">1:00 PM</span> — <span class="event">💀 Til' Death Do Us (Pool) Party & Lunch 👙</span>
+                <a href="https://www.google.com/maps/place/3404+East+5th+Street,+Tucson,+AZ+85716" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">Desert afterlife meets poolside mischief like a Día de los Muertos disco</p>
+                <p class="look">Desert Afterlife</p>
+              </div>
+              <div class="itinerary-block">
+                <span class="time">7:00 PM</span> — <span class="event">🍕 Dinner @ Anello 🍷</span>
+                <a href="https://www.google.com/maps/search/anello+tucson" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">Sourdough pizza & natty wine</p>
+                <p class="look">Desert Disco</p>
+              </div>
+              <div class="itinerary-block">
+                <span class="time">9:00 PM</span> — <span class="event">💃 Going Out-Out (or cocktail hoppin, depending on mood) 🪩</span>
+                <a href="https://www.google.com/maps/place/Playground+Rooftop/@32.2219233,-110.9698584,17z" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">Glitter, sweat, and the kind of night that reminds you why going out is still fun</p>
+                <p class="look">Desert Disco</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sunday -->
+        <div style="margin-top: 0.75rem;">
+          <button type="button" class="collapse-trigger" aria-controls="day-sun" aria-expanded="false">
+            <span class="day-badge" style="background: #ffd700; color: #333;">Sun</span>
+            <span>Soft Girl Sunday</span>
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div id="day-sun" class="collapse-panel">
+            <div class="collapse-content">
+              <div class="itinerary-block">
+                <span class="time">9:00 AM</span> — <span class="event">🥐 Catered Breakfast & Coffee Bar from Time Market ☕</span>
+                <a href="https://www.google.com/maps/place/3404+East+5th+Street,+Tucson,+AZ+85716" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">Soft mornings & slow starts, cold brew flowing, croissants, toasts, and nowhere else to be</p>
+                <p class="look">Soft Girl Sunday</p>
+              </div>
+              <div class="itinerary-block">
+                <span class="time">10:00 AM</span> — <span class="event">🧘‍♀️ Breathwork & Sound Bath 😌</span>
+                <a href="https://www.google.com/maps/place/3404+East+5th+Street,+Tucson,+AZ+85716" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">Grounding, restorative, and calm</p>
+                <p class="look">Soft Girl Sunday</p>
+              </div>
+              <div class="itinerary-block">
+                <span class="time">11:00 AM</span> — <span class="event">💆‍♀️ Massages + Spa Station 🧖‍♀️</span>
+                <a href="https://www.google.com/maps/place/3404+East+5th+Street,+Tucson,+AZ+85716" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <a href="massage.html" class="itinerary-map">→ Massage Schedule</a>
+                <p class="itinerary-vibe">Soft luxury at home, deep relaxation, and full-body reset</p>
+                <p class="look">Soft Girl Sunday</p>
+              </div>
+              <div class="itinerary-block">
+                <span class="time">1:00 PM</span> — <span class="event">🥪 Lunch @ Café à la C'Art 🥗</span>
+                <a href="https://www.google.com/maps/search/caf%C3%A9+%C3%A0+la+c'art+tucson" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">Fresh, bright, and leisurely</p>
+                <p class="look">Soft Girl Sunday</p>
+              </div>
+              <div class="itinerary-block">
+                <span class="time">6:00 PM</span> — <span class="event">🔥 Hibachi @ Airbnb + Bridal Games 🍱</span>
+                <a href="https://www.google.com/maps/place/3404+East+5th+Street,+Tucson,+AZ+85716" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">Flames flying, sake flowing, and dinner as a show</p>
+                <p class="look">Desert Sunset</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Monday -->
+        <div style="margin-top: 0.75rem;">
+          <button type="button" class="collapse-trigger" aria-controls="day-mon" aria-expanded="false">
+            <span class="day-badge" style="background: var(--clay); color: var(--magenta);">Mon</span>
+            <span>The Final Farewell</span>
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div id="day-mon" class="collapse-panel">
+            <div class="collapse-content">
+              <div class="itinerary-block">
+                <span class="time">9:00 AM</span> — <span class="event">🌅 Coffee Outing @ Presta ☕</span>
+                <a href="https://www.google.com/maps/search/Presta+Coffee+Roasters+Tucson" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">One last caffeine stop and soaking up the final moments together</p>
+                <p class="look">Anything goes!</p>
+              </div>
+              <div class="itinerary-block">
+                <span class="time">11:00 AM</span> — <span class="event">🧳 Pack, Check Out, & HUGS! 🤗</span>
+                <a href="https://www.google.com/maps/place/3404+East+5th+Street,+Tucson,+AZ+85716" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">Goodbyes, group hugs, and see you at the weddings!</p>
+                <p class="look">Anything goes!</p>
+              </div>
+              <div class="itinerary-block">
+                <span class="time">12:00 PM</span> — <span class="event">🪴 Lunch (for those around) @ MSA Annex 😋</span>
+                <a href="https://www.google.com/maps/place/MSA+Annex" target="_blank" rel="noopener" class="itinerary-map">📍 Map</a>
+                <p class="itinerary-vibe">Casual, choose-your-own-adventure lunch</p>
+                <p class="look">Anything goes!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="tagline">Stay vibey.</p>
+    <p class="copy">Carly's Desert Disco · 2026</p>
+  </footer>
+
+  <script src="js/desert-disco.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carly's Desert Disco — Tucson, March 20–23</title>
+  <link rel="stylesheet" href="css/desert-disco.css">
+</head>
+<body>
+  <div id="password-gate">
+    <div class="gate-inner">
+      <h2>Carly's Desert Disco <span class="sparkle">🪩</span></h2>
+      <p>Enter the secret code to join the party.</p>
+      <input type="password" name="password" placeholder="Password" autocomplete="off" autofocus aria-label="Party password">
+      <button type="button" class="btn-unlock">Let's go</button>
+      <p class="gate-error" aria-live="polite">Nope. Try again.</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Carly's Desert Disco <span>🌵</span></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="lookbook.html">Lookbook</a>
+        <a href="massage.html">Massage Schedule</a>
+        <a href="crew.html">The Humans</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="disco-glow" aria-hidden="true"></div>
+      <div class="disco-glow" aria-hidden="true"></div>
+      <h1>Carly's Desert Disco</h1>
+      <p class="hero-sub">March 20–23 · Tucson, Arizona</p>
+      <p class="hero-badge">This is going to be iconic <span class="disco-emoji" aria-hidden="true">🪩</span></p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">The weekend forecast</h2>
+      <p style="margin-bottom: 1rem; color: var(--text-muted);">
+        We're trading the group chat for the group trip. Expect a high probability of Aperol Spritz showers, 
+        scattered glitter storms, and a <strong>100% chance of iconic memories</strong>. We start chill, 
+        peak at Desert Disco, and land softly into Soft Girl Sunday.
+      </p>
+      <div class="callout">
+        <strong>Pro tip:</strong> Hydration station is mandatory. We're in a literal desert.
+      </div>
+    </section>
+
+    <!-- Reworked infographic: party data viz -->
+    <section class="section">
+      <h2 class="section-title">Real-time vibe projection</h2>
+      <div class="viz-card">
+        <h3>Energy forecast (source: Girls Trip Emotional Algorithm™)</h3>
+        <div class="chart-wrap">
+          <canvas id="energyChart"></canvas>
+        </div>
+        <p class="text-center" style="font-size: 0.7rem; color: var(--text-muted); margin-top: 0.5rem;">Arrival → Fri → Sat Pool → Disco → Spa → Hibachi → Exit</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="viz-card big-stat">
+          <div class="value">100%</div>
+          <div class="label">Pistachios & snacks coverage</div>
+          <div style="font-size: 1.5rem; margin-top: 0.25rem;">🥨</div>
+        </div>
+        <div class="viz-card">
+          <h3>Cocktail vibe analysis</h3>
+          <div class="chart-wrap">
+            <canvas id="cocktailRadar"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="viz-card">
+        <h3>Saturday activity intensity</h3>
+        <div class="heatmap-wrap" style="overflow-x: auto;">
+          <table class="heatmap-table" style="width: 100%; border-collapse: collapse; font-size: 0.75rem;">
+            <thead>
+              <tr>
+                <th style="padding: 0.4rem; text-align: left;"></th>
+                <th>10AM</th><th>12PM</th><th>2PM</th><th>4PM</th><th>6PM</th><th>8PM</th><th>10PM</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="font-weight: 600; padding: 0.4rem;">Chill</td>  <td class="hm" style="background: rgba(199,21,133,0.6)"></td><td class="hm" style="background: rgba(199,21,133,0.3)"></td><td class="hm" style="background: rgba(199,21,133,0.12)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td></tr>
+              <tr><td style="font-weight: 600; padding: 0.4rem;">Pool</td>   <td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.48)"></td><td class="hm" style="background: rgba(199,21,133,0.6)"></td><td class="hm" style="background: rgba(199,21,133,0.3)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td></tr>
+              <tr><td style="font-weight: 600; padding: 0.4rem;">Food</td>   <td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.18)"></td><td class="hm" style="background: rgba(199,21,133,0.48)"></td><td class="hm" style="background: rgba(199,21,133,0.6)"></td><td class="hm" style="background: rgba(199,21,133,0.3)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td></tr>
+              <tr><td style="font-weight: 600; padding: 0.4rem;">Dancing</td> <td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.12)"></td><td class="hm" style="background: rgba(199,21,133,0.3)"></td><td class="hm" style="background: rgba(199,21,133,0.6)"></td><td class="hm" style="background: rgba(199,21,133,0.6)"></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="viz-card">
+        <h3>Attire composition (Sat daytime)</h3>
+        <div class="chart-wrap">
+          <canvas id="attireChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="section text-center">
+      <p style="font-size: 1rem; color: var(--text-muted); margin-bottom: 0.5rem;">Who, where, vibe</p>
+      <p><strong>Carly</strong> · Tucson / Sonoran Desert · Palm Springs meets Studio 54 · <span class="sparkle">🪩</span></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="tagline">Stay vibey.</p>
+    <p class="copy">Carly's Desert Disco · 2026</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/desert-disco.js"></script>
+  <script src="js/home-charts.js"></script>
+  <style>
+    .hm { width: 2.5rem; height: 2rem; border-radius: 4px; }
+    .heatmap-table th, .heatmap-table td.hm { text-align: center; }
+    .heatmap-table thead th { background: rgba(199,21,133,0.1); color: var(--magenta); font-size: 0.7rem; }
+  </style>
+</body>
+</html>

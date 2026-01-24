@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massage Schedule — Carly's Desert Disco</title>
+  <link rel="stylesheet" href="css/desert-disco.css">
+</head>
+<body>
+  <div id="password-gate">
+    <div class="gate-inner">
+      <h2>Carly's Desert Disco <span class="sparkle">🪩</span></h2>
+      <p>Enter the secret code to join the party.</p>
+      <input type="password" name="password" placeholder="Password" autocomplete="off" autofocus aria-label="Party password">
+      <button type="button" class="btn-unlock">Let's go</button>
+      <p class="gate-error" aria-live="polite">Nope. Try again.</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Carly's Desert Disco <span>🌵</span></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="lookbook.html">Lookbook</a>
+        <a href="massage.html" class="active">Massage Schedule</a>
+        <a href="crew.html">The Humans</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1 class="section-title">💆‍♀️ The Spa Rotation</h1>
+      <p style="margin-bottom: 1rem; color: var(--text-muted);">Sunday · #SoftGirlSunday · Massages + Spa Station.</p>
+
+      <div class="viz-card" style="padding: 0; overflow: hidden;">
+        <div style="padding: 0.75rem 1rem; background: linear-gradient(135deg, rgba(255,215,0,0.25) 0%, rgba(199,21,133,0.08) 100%); border-bottom: 1px solid var(--clay);">
+          <strong>Sunday 11:00 AM – 12:30 PM</strong>
+        </div>
+        <div class="massage-table-wrap">
+          <table class="massage-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Human 1</th>
+                <th>Human 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time">11:00 – 11:30</td>
+                <td>Annie</td>
+                <td>James</td>
+              </tr>
+              <tr>
+                <td class="time">11:30 – 12:00</td>
+                <td>Carly</td>
+                <td>Joanie</td>
+              </tr>
+              <tr>
+                <td class="time">12:00 – 12:30</td>
+                <td>Taylor</td>
+                <td>Erin</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="tagline">Stay vibey.</p>
+    <p class="copy">Carly's Desert Disco · 2026</p>
+  </footer>
+
+  <script src="js/desert-disco.js"></script>
+</body>
+</html>
