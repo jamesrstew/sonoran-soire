@@ -25,6 +25,7 @@
         gate.classList.add('hidden');
         if (err) err.classList.remove('visible');
         document.body.classList.add('just-unlocked');
+        window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
         setTimeout(function () { document.body.classList.remove('just-unlocked'); }, 2500);
       } else {
         gate.classList.add('shake');

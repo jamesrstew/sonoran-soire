@@ -303,6 +303,45 @@ main {
   animation-delay: -2s;
 }
 
+.hero-emoji {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.6;
+  animation: disco-rotate 7s linear infinite;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.08));
+}
+
+.hero-emoji-left {
+  top: 8%;
+  left: 6%;
+  font-size: 2.2rem;
+}
+
+.hero-emoji-right {
+  top: 14%;
+  right: 8%;
+  font-size: 2.6rem;
+  opacity: 0.45;
+  animation-duration: 9s;
+}
+
+.hero-emoji-bottom-left {
+  bottom: -6px;
+  left: 8%;
+  font-size: 3.4rem;
+  opacity: 0.2;
+  animation-duration: 12s;
+}
+
+.hero-emoji-bottom-right {
+  bottom: -10px;
+  right: 6%;
+  font-size: 3.8rem;
+  opacity: 0.18;
+  animation-duration: 10s;
+}
+
 .disco-ball {
   position: absolute;
   border-radius: 50%;
@@ -356,11 +395,20 @@ main {
   .hero .disco-glow { animation: none; }
   .hero-ball-left,
   .hero-ball-right { animation: none; }
+  .hero-emoji { animation: none; }
 }
 
 @keyframes float {
   0%, 100% { transform: translate(0, 0); }
   50% { transform: translate(10px, -10px); }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
 }
 
 .hero h1 {
