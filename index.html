@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carly's Desert Disco — Tucson, March 20–23</title>
+  <title>Carly's Sonoran Soirée — Tucson, March 20–23</title>
   <link rel="stylesheet" href="css/desert-disco.css">
 </head>
 <body>
   <div id="password-gate">
     <div class="gate-inner">
-      <h2>Carly's Desert Disco <span class="sparkle">🪩</span></h2>
+      <h2>Carly's Sonoran Soirée <span class="sparkle">🪩</span></h2>
       <p>Enter the secret code to join the party.</p>
       <input type="password" name="password" placeholder="Password" autocomplete="off" autofocus aria-label="Party password">
       <button type="button" class="btn-unlock">Let's go</button>
@@ -19,7 +19,7 @@
 
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="site-logo">Carly's Desert Disco <span>🌵</span></a>
+      <a href="index.html" class="site-logo">Carly's Sonoran Soirée <span>🌵</span></a>
       <button type="button" class="nav-toggle" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
@@ -37,20 +37,31 @@
     <section class="hero">
       <div class="disco-glow" aria-hidden="true"></div>
       <div class="disco-glow" aria-hidden="true"></div>
-      <h1>Carly's Desert Disco</h1>
-      <p class="hero-sub">March 20–23 · Tucson, Arizona</p>
-      <p class="hero-badge">This is going to be iconic <span class="disco-emoji" aria-hidden="true">🪩</span></p>
+      <div class="disco-ball hero-ball hero-ball-left" aria-hidden="true"></div>
+      <div class="disco-ball hero-ball hero-ball-right" aria-hidden="true"></div>
+      <svg class="cactus-svg hero-cactus hero-cactus-left" viewBox="0 0 100 200" aria-hidden="true">
+        <path d="M50 200 V40 Q50 20 70 20 Q90 20 90 40 V80 Q90 100 70 100 M50 150 Q50 130 30 130 Q10 130 10 150 V180" />
+      </svg>
+      <svg class="cactus-svg hero-cactus hero-cactus-right" viewBox="0 0 100 200" aria-hidden="true">
+        <path d="M50 200 V40 Q50 20 70 20 Q90 20 90 40 V80 Q90 100 70 100 M50 150 Q50 130 30 130 Q10 130 10 150 V180" />
+      </svg>
+      <div class="hero-content">
+        <h1>Carly's Sonoran Soirée</h1>
+        <p class="hero-sub">March 20–23 · Tucson, Arizona</p>
+        <p class="hero-tag">Tucson, baby. <span aria-hidden="true">🪩</span></p>
+        <p class="hero-badge">This is going to be iconic <span class="disco-emoji" aria-hidden="true">🪩</span></p>
+      </div>
     </section>
 
     <section class="section">
       <h2 class="section-title">The weekend forecast</h2>
       <p style="margin-bottom: 1rem; color: var(--text-muted);">
-        We're trading the group chat for the group trip. Expect a high probability of Aperol Spritz showers, 
-        scattered glitter storms, and a <strong>100% chance of iconic memories</strong>. We start chill, 
+        Buckle up, ladies. We are trading the group chat for the group trip. Expect a high probability of Aperol Spritz showers,
+        scattered glitter storms, and a <strong>100% chance of iconic memories</strong>. We start chill,
         peak at Desert Disco, and land softly into Soft Girl Sunday.
       </p>
       <div class="callout">
-        <strong>Pro tip:</strong> Hydration station is mandatory. We're in a literal desert.
+        <strong>Pro tip:</strong> Hydration station is mandatory. We are in a literal desert.
       </div>
     </section>
 
@@ -58,67 +69,212 @@
     <section class="section">
       <h2 class="section-title">Real-time vibe projection</h2>
       <div class="viz-card">
+        <div class="disco-ball viz-ball" aria-hidden="true"></div>
         <h3>Energy forecast (source: Girls Trip Emotional Algorithm™)</h3>
         <div class="chart-wrap">
           <canvas id="energyChart"></canvas>
         </div>
-        <p class="text-center" style="font-size: 0.7rem; color: var(--text-muted); margin-top: 0.5rem;">Arrival → Fri → Sat Pool → Disco → Spa → Hibachi → Exit</p>
-      </div>
-
-      <div class="grid-2">
-        <div class="viz-card big-stat">
-          <div class="value">100%</div>
-          <div class="label">Pistachios & snacks coverage</div>
-          <div style="font-size: 1.5rem; margin-top: 0.25rem;">🥨</div>
+        <div class="viz-legend">
+          <span>Friday</span>
+          <span>Saturday</span>
+          <span>Sunday</span>
+          <span>Monday</span>
         </div>
-        <div class="viz-card">
-          <h3>Cocktail vibe analysis</h3>
-          <div class="chart-wrap">
-            <canvas id="cocktailRadar"></canvas>
+        <p class="viz-source">Source: The "Girls Trip" Emotional Algorithm</p>
+      </div>
+    </section>
+
+    <section class="section day-section">
+      <div class="day-header">
+        <div class="day-badge day-badge-fri">Fri</div>
+        <h2 class="section-title">Southwestern Welcome</h2>
+      </div>
+      <div class="day-grid">
+        <div class="day-stack">
+          <div class="card day-card">
+            <h3 class="day-card-title">📍 The Itinerary</h3>
+            <ul class="itinerary-list">
+              <li><strong>12:00 PM:</strong> <span>Cup Cafe Brunch</span></li>
+              <li><strong>4:00 PM:</strong> <span>Arrival + Spritz Bar</span></li>
+              <li><strong>6:30 PM:</strong> <span>Dinner @ JoJo's</span></li>
+              <li><strong>9:00 PM:</strong> <span>Drinks @ Moonstone</span></li>
+            </ul>
+          </div>
+          <div class="look-callout">
+            <p><strong>👗 The Look:</strong> Elevated Denim & Desert Tones.</p>
+            <p class="look-hashtag">#CanadianTuxedo</p>
+          </div>
+        </div>
+        <div class="day-stack">
+          <div class="day-two-up">
+            <div class="viz-card">
+              <h3>Cocktail vibe analysis</h3>
+              <div class="chart-wrap">
+                <canvas id="cocktailRadar"></canvas>
+              </div>
+            </div>
+            <div class="viz-card big-stat">
+              <div class="cactus-emoji" aria-hidden="true">🌵</div>
+              <div class="value">100%</div>
+              <div class="label">Coverage of pistachios & snacks</div>
+              <div style="font-size: 1.5rem; margin-top: 0.25rem;">🥨</div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="viz-card">
-        <h3>Saturday activity intensity</h3>
-        <div class="heatmap-wrap" style="overflow-x: auto;">
-          <table class="heatmap-table" style="width: 100%; border-collapse: collapse; font-size: 0.75rem;">
-            <thead>
-              <tr>
-                <th style="padding: 0.4rem; text-align: left;"></th>
-                <th>10AM</th><th>12PM</th><th>2PM</th><th>4PM</th><th>6PM</th><th>8PM</th><th>10PM</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td style="font-weight: 600; padding: 0.4rem;">Chill</td>  <td class="hm" style="background: rgba(199,21,133,0.6)"></td><td class="hm" style="background: rgba(199,21,133,0.3)"></td><td class="hm" style="background: rgba(199,21,133,0.12)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td></tr>
-              <tr><td style="font-weight: 600; padding: 0.4rem;">Pool</td>   <td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.48)"></td><td class="hm" style="background: rgba(199,21,133,0.6)"></td><td class="hm" style="background: rgba(199,21,133,0.3)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td></tr>
-              <tr><td style="font-weight: 600; padding: 0.4rem;">Food</td>   <td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.18)"></td><td class="hm" style="background: rgba(199,21,133,0.48)"></td><td class="hm" style="background: rgba(199,21,133,0.6)"></td><td class="hm" style="background: rgba(199,21,133,0.3)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td></tr>
-              <tr><td style="font-weight: 600; padding: 0.4rem;">Dancing</td> <td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.12)"></td><td class="hm" style="background: rgba(199,21,133,0.3)"></td><td class="hm" style="background: rgba(199,21,133,0.6)"></td><td class="hm" style="background: rgba(199,21,133,0.6)"></td></tr>
-            </tbody>
-          </table>
+    <section class="section day-section">
+      <div class="day-header">
+        <div class="day-badge day-badge-sat">Sat</div>
+        <h2 class="section-title">Til' Death Do Us Party</h2>
+      </div>
+      <div class="daytime-card">
+        <div class="disco-ball daytime-ball" aria-hidden="true"></div>
+        <div class="daytime-content">
+          <h3>Daytime: Desert Afterlife</h3>
+          <p class="daytime-hashtag">#DesertAfterLife</p>
+          <p class="daytime-desc">A Día de los Muertos disco. Custom Shirts + Swimwear (Black/Rust/Metallic). Poolside mischief meets sun-drenched backyard.</p>
+          <div class="daytime-list">
+            <div class="daytime-item daytime-item-warm">
+              <p><span aria-hidden="true">🏜️</span> <strong>10:00 AM:</strong> Sabino Canyon 🌵</p>
+            </div>
+            <div class="daytime-item daytime-item-cool">
+              <p><span aria-hidden="true">🌊</span> <strong>1:00 PM:</strong> Pool Party + Tamales, Margs & Spicy Palomas 👙</p>
+            </div>
+          </div>
+        </div>
+        <div class="daytime-attire">
+          <div class="card attire-card">
+            <h3 class="attire-title">Attire composition</h3>
+            <div class="chart-wrap">
+              <canvas id="attireChart"></canvas>
+            </div>
+            <div class="attire-legend">
+              <span>Swimwear</span>
+              <span>Western Props</span>
+              <span>Custom Shirts</span>
+              <span>Metallic Liner</span>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="viz-card">
-        <h3>Attire composition (Sat daytime)</h3>
-        <div class="chart-wrap">
-          <canvas id="attireChart"></canvas>
+      <div class="day-split">
+        <div class="card night-card">
+          <h3>Night: Desert Disco</h3>
+          <p>Glitter, sweat, and sourdough pizza at Anello. Followed by dancing at Club Congress.</p>
+          <div class="tag-row">
+            <span class="tag tag-warm">Pizza</span>
+            <span class="tag tag-pink">Wine</span>
+            <span class="tag tag-purple">Dancing</span>
+          </div>
+        </div>
+        <div class="viz-card">
+          <h3>Saturday activity intensity</h3>
+          <div class="heatmap-wrap">
+            <div id="heatmapContainer" class="heatmap-plot" aria-hidden="true"></div>
+            <table class="heatmap-table heatmap-fallback" style="width: 100%; border-collapse: collapse; font-size: 0.75rem;">
+              <thead>
+                <tr>
+                  <th style="padding: 0.4rem; text-align: left;"></th>
+                  <th>10AM</th><th>12PM</th><th>2PM</th><th>4PM</th><th>6PM</th><th>8PM</th><th>10PM</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td style="font-weight: 600; padding: 0.4rem;">Chill</td>  <td class="hm" style="background: rgba(199,21,133,0.6)"></td><td class="hm" style="background: rgba(199,21,133,0.3)"></td><td class="hm" style="background: rgba(199,21,133,0.12)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td></tr>
+                <tr><td style="font-weight: 600; padding: 0.4rem;">Pool</td>   <td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.48)"></td><td class="hm" style="background: rgba(199,21,133,0.6)"></td><td class="hm" style="background: rgba(199,21,133,0.3)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td></tr>
+                <tr><td style="font-weight: 600; padding: 0.4rem;">Food</td>   <td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.18)"></td><td class="hm" style="background: rgba(199,21,133,0.48)"></td><td class="hm" style="background: rgba(199,21,133,0.6)"></td><td class="hm" style="background: rgba(199,21,133,0.3)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td></tr>
+                <tr><td style="font-weight: 600; padding: 0.4rem;">Dancing</td> <td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.06)"></td><td class="hm" style="background: rgba(199,21,133,0.12)"></td><td class="hm" style="background: rgba(199,21,133,0.3)"></td><td class="hm" style="background: rgba(199,21,133,0.6)"></td><td class="hm" style="background: rgba(199,21,133,0.6)"></td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section text-center">
-      <p style="font-size: 1rem; color: var(--text-muted); margin-bottom: 0.5rem;">Who, where, vibe</p>
-      <p><strong>Carly</strong> · Tucson / Sonoran Desert · Palm Springs meets Studio 54 · <span class="sparkle">🪩</span></p>
+    <section class="section day-section">
+      <div class="day-header">
+        <div class="day-badge day-badge-sun">Sun</div>
+        <h2 class="section-title">Soft Girl Sunday</h2>
+      </div>
+      <div class="recovery-note">
+        <h3>The Recovery Protocol</h3>
+        <p>Breathwork, sound baths, and rotating massages. We're exiting the desert refined, refreshed, and hydrated.</p>
+      </div>
+      <div class="day-grid day-grid-two">
+        <div class="day-stack">
+          <div class="card day-card">
+            <h3 class="day-card-title">🍵 Morning Rituals</h3>
+            <ul class="ritual-list">
+              <li><span>9:00 AM</span><span>Catered Breakfast & Coffee Bar</span></li>
+              <li><span>10:00 AM</span><span>Breathwork & Sound Bath</span></li>
+              <li><span>11:00 AM</span><span>Massages + Spa Station</span></li>
+            </ul>
+          </div>
+          <div class="card spa-card">
+            <div class="spa-header">
+              <h3>💆‍♀️ The Spa Rotation</h3>
+              <span>#SoftGirlSunday</span>
+            </div>
+            <table class="spa-table">
+              <thead>
+                <tr><th>Time</th><th>Human 1</th><th>Human 2</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>11:00–11:30</td><td>Annie</td><td>James</td></tr>
+                <tr><td>11:30–12:00</td><td>Carly</td><td>Taylor</td></tr>
+                <tr><td>12:00–12:30</td><td>Joanie</td><td>Erin</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="hibachi-card">
+          <div class="disco-ball hibachi-ball" aria-hidden="true"></div>
+          <h3>Hibachi Night</h3>
+          <p class="hibachi-sub">The Sunset Finale</p>
+          <div class="hibachi-look">
+            <p class="hibachi-label">The Final Look</p>
+            <p class="hibachi-text">Flowy, Effortless, Golden Tones</p>
+          </div>
+          <div class="hibachi-emoji" aria-hidden="true">🍱</div>
+        </div>
+      </div>
     </section>
+
+    <section class="section day-section">
+      <div class="day-header">
+        <div class="day-badge day-badge-mon">Mon</div>
+        <h2 class="section-title">The Final Farewell</h2>
+      </div>
+      <div class="card farewell-card">
+        <div class="farewell-body">
+          <div class="farewell-copy">
+            <h3>Monday Morning Glow</h3>
+            <p>Quiet coffee, leftover tamales, and one last desert sunrise before we pack the glitter away. Safe travels, legends.</p>
+          </div>
+          <div class="farewell-stats">
+            <div>
+              <p>Check Out</p>
+              <strong>11:00 AM</strong>
+            </div>
+            <div>
+              <p>Vibe Status</p>
+              <strong>Bittersweet</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
     <p class="tagline">Stay vibey.</p>
-    <p class="copy">Carly's Desert Disco · 2026</p>
+    <p class="copy">Carly's Sonoran Soirée · 2026</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
   <script src="js/desert-disco.js"></script>
   <script src="js/home-charts.js"></script>
   <style>

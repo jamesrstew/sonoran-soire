@@ -62,6 +62,58 @@
     });
   }
 
+  // ----- Lookbook lightbox -----
+  function initLookbookLightbox() {
+    var lightbox = document.getElementById('lookbook-lightbox');
+    if (!lightbox) return;
+
+    var imgEl = lightbox.querySelector('.lightbox-image');
+    var closeBtn = lightbox.querySelector('.lightbox-close');
+    var triggers = document.querySelectorAll('.lookbook-zoom');
+    var lastFocused = null;
+
+    function openLightbox(src, alt) {
+      if (!imgEl) return;
+      lastFocused = document.activeElement;
+      imgEl.src = src;
+      imgEl.alt = alt || '';
+      lightbox.classList.add('is-open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('lightbox-open');
+    }
+
+    function closeLightbox() {
+      if (!imgEl) return;
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('lightbox-open');
+      imgEl.src = '';
+      imgEl.alt = '';
+      if (lastFocused && typeof lastFocused.focus === 'function') {
+        lastFocused.focus();
+      }
+    }
+
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var img = btn.querySelector('img');
+        var src = btn.getAttribute('data-full') || (img ? img.src : '');
+        var alt = img ? img.alt : '';
+        if (src) openLightbox(src, alt);
+      });
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', function (event) {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && lightbox.classList.contains('is-open')) {
+        closeLightbox();
+      }
+    });
+  }
+
   // ----- Collapsibles -----
   function initCollapsibles() {
     document.querySelectorAll('.collapse-trigger').forEach(function (btn) {
@@ -92,6 +144,7 @@
   ready(function () {
     initPasswordGate();
     initNav();
+    initLookbookLightbox();
     initCollapsibles();
   });
 })();
